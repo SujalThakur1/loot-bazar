@@ -1,15 +1,31 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "/server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)", 
-      "dest": "server.js"
-    }
-  ]
+  "server": {
+    "controllers": {
+      "categoryController": "controllers/categoryControl.js",
+      "productController": "controllers/productControl.js",
+      "userController": "controllers/userControl.js"
+    },
+    "middleware": {
+      "auth": "middleware/auth.js",
+      "authAdmin": "middleware/authAdmin.js"
+    },
+    "models": {
+      "categoryModel": "models/categoryModel.js",
+      "productModel": "models/productModel.js",
+      "userModel": "models/userModel.js"
+    },
+    "routes": {
+      "categoryRoutes": "Routes/categoryRoutes.js",
+      "productRoutes": "Routes/productRoutes.js",
+      "userRoutes": "Routes/userRouter.js"
+    },
+    "config": {
+      "env": ".env"
+    },
+    "main": "server.js"
+  },
+  "dependencies": {
+    "packageLock": "package-lock.json",
+    "package": "package.json"
+  }
 }
