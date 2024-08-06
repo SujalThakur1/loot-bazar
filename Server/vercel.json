@@ -8,15 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/category/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/product/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/user/(.*)",
+      "src": "/(.*)",
       "dest": "/server.js"
     }
   ]
