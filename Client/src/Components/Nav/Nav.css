@@ -1,0 +1,133 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: relative;
+}
+
+.nav img {
+  width: 200px;
+  transform: scale(1.2);
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav img:hover {
+  transform: scale(1.4);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.search input {
+  font-size: 1rem;
+  padding: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  background: #eebbbb92;
+  color: #000000;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  flex: 1;
+}
+
+.search input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.search button {
+  padding: 13px 20px;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  background: #ff7e5f;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.search button:hover {
+  background-color:#feb47b;
+  box-shadow: 0 5px 15px #c59a79;
+}
+
+.search button:active {
+  transform: scale(0.98);
+}
+
+.register button {
+  padding: 13px 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #ff7e5f;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.register button:hover {
+  background-color:#feb47b;
+  box-shadow: 0 5px 15px #c59a79;
+}
+
+.register button:active {
+  transform: scale(0.9);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon img {
+  width: 60px;
+  transform: scale(1);
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.icon img:hover {
+  transform: scale(1.2);
+}
+
+.icon p {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    padding-bottom: 70px;
+  }
+  .search {
+    flex-direction: row;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Increase width */
+  }
+  .register button {
+    margin-right: auto;
+    width: max-content;
+  }
+}

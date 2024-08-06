@@ -1,0 +1,108 @@
+.sign-in-form {
+  margin: auto;
+  margin: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: 5px solid rgb(11, 11, 11);
+  color: black;
+  text-align: center;
+  width: 40%;
+  padding: 50px;
+  font-family: sans-serif;
+  font-size: x-large;
+  margin-top: 50px;
+}
+
+.sign-in-form p {
+  font-size: large;
+  color: rgba(71, 68, 68, 0.712);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.sign-in-form input {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.sign-in-form button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 98%;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.signUp {
+  color: rgb(74, 75, 76);
+}
+
+.signUp #signUp {
+  color: rgb(68, 142, 247);
+}
+#errorr {
+  color: rgb(255, 0, 0);
+}
+
+
+#password{
+    padding-right: 44px;
+}
+
+
+.password-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-input-container input {
+  flex: 1;
+}
+
+#eye {
+  position: absolute;
+  right: 1rem;
+  top: 1.3rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.592);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+  .sign-in-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .password-input-container input {
+    padding-right: 2.5rem;
+  }
+
+  #eye {
+    top: 1.3rem;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+}
