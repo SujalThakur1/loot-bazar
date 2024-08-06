@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(
   cors({
-    origin: "https://loot-bazar-frontend.vercel.app",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
