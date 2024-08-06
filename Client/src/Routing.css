@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.route{
+    color: white;
+    background: linear-gradient(90deg, #ff4d4d, #ff6666);
+    min-height: 100vh;
+}

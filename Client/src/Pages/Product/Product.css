@@ -1,0 +1,126 @@
+.HeadContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: linear-gradient(90deg, #ff4d4d, #ff6666);
+}
+
+.container {
+  margin: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 2px solid #8b7777;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+.image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+.details {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px;
+}
+
+.details h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.details h2 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+.details h1::first-letter,
+.details h2::first-letter {
+  text-transform: uppercase;
+}
+
+.details .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+.details button {
+  border-radius: 25px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff4d4d, #ff6666);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details button:hover {
+  background: linear-gradient(45deg,rgb(237, 36, 49),rgb(223, 20, 20));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.details button:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .container {
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  .details {
+    text-align: left;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .details h1, .details .price, .details button {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .details h2{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .details button {
+    width: 100%;
+  }
+}
