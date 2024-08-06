@@ -21,7 +21,7 @@ export default function Login() {
       } else {
         setError("");
         await axios.post(
-          "https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app",
+          "https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app/user/register",
           { ...user },
           { withCredentials: true }
         );
