@@ -25,6 +25,7 @@ const userControl = {
       res.cookie("refreshToken", refreshToken, {
         httpOnly: true,
         path: "/user/refresh_token",
+        secure: true,
       });
       res.json({ refreshToken, accessToken });
     } catch (err) {
@@ -46,6 +47,7 @@ const userControl = {
       res.cookie("refreshToken", refreshToken, {
         httpOnly: true,
         path: "/user/refresh_token",
+        secure: true,
       });
 
       res.json({refreshToken})
