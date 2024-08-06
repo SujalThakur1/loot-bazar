@@ -20,7 +20,7 @@ export default function Login() {
       } else {
         setError("");
         await axios.post(
-          "http://localhost:3000/user/login",
+          "https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app/user/login",
           {
             ...user,
           },
