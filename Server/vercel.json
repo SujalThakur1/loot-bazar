@@ -7,8 +7,9 @@
     }
   ],
   "routes": [
-    { "src": "/Routes/categoryRoutes", "dest": "/api/categoryRoutes.js" },
-    { "src": "/Routes/productRoutes", "dest": "/api/productRoutes.js" },
-    { "src": "/Routes/userRoutes", "dest": "/api/userRoutes.js" }
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
   ]
 }
