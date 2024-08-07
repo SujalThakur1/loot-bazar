@@ -61,8 +61,6 @@ const userControl = {
   // Refresh token function
   refreshToken: async (req, res) => {
     try {
-      res.json({result : req.cookies,msg:  "it is req cookie"})
-      res.json(req, " it is req")
       const rfToken = req.cookies.refreshToken;
       if (!rfToken)
         return res
