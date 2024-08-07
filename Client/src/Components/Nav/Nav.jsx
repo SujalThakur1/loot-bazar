@@ -35,7 +35,7 @@ export default function Nav() {
   const totalQuantity = Cart.reduce((acc, item) => acc + item.quantity, 0);
   const Logout = async () =>{
     try {
-       await axios.get("https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app/user/logout");
+       await axios.get("https://loot-bazar-api.onrender.com/user/logout");
        localStorage.clear()
        setAdminLogged(false)
        setIsLogged(false)
