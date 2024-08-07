@@ -26,6 +26,7 @@ const userControl = {
         httpOnly: true,
         path: "/user/refresh_token",
         secure: true,
+        sameSite: 'None'
       });
       res.json({ refreshToken, accessToken });
     } catch (err) {
@@ -48,6 +49,7 @@ const userControl = {
         httpOnly: true,
         path: "/user/refresh_token",
         secure: true,
+        sameSite: 'None'
       });
 
       res.json({refreshToken})
@@ -59,7 +61,7 @@ const userControl = {
   // Refresh token function
   refreshToken: async (req, res) => {
     try {
-      res.json(req.cookies,  "it is req cookie")
+      res.json({result : req.cookies,msg:  "it is req cookie"})
       res.json(req, " it is req")
       const rfToken = req.cookies.refreshToken;
       if (!rfToken)
