@@ -34,7 +34,7 @@ export const DataProvider = ({ children }) => {
 
   const refreshToken = async () => {
     try {
-      const res = await axios.get("https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app/user/refresh_token", {
+      const res = await axios.get("https://loot-bazar-api.onrender.com/user/refresh_token", {
         withCredentials: true,
       });
       console.log(res)
@@ -85,7 +85,7 @@ export const DataProvider = ({ children }) => {
 
       if (!fromServer) {
         const response = await axios.post(
-          "http://https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app/user/updateUser",
+          "https://loot-bazar-api.onrender.com/user/updateUser",
           { cart: updatedCart },
           {
             headers: { Authorization: token },
@@ -118,7 +118,7 @@ export const DataProvider = ({ children }) => {
         setCart(updatedCart);
 
         await axios.post(
-          "http://https://loot-bazar-lwt5xh0ir-sujal-thakurs-projects-ec0a914c.vercel.app/user/updateUser",
+          "https://loot-bazar-api.onrender.com/user/updateUser",
           { cart: updatedCart },
           {
             headers: { Authorization: token },
