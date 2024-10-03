@@ -10,7 +10,7 @@ function UserApi(token, setCart) {
       const getUser = async () => {
         try {
           const res = await axios.get(
-            "https://loot-bazar-api.onrender.com/user/information",
+            "https://loot-bazar.vercel.app/user/information",
             {
               headers: { Authorization: token },
             }
