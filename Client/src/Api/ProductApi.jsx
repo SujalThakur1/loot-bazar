@@ -6,7 +6,7 @@ export default function useProductApi() {
 
   const getProducts = async () => {
     try {
-      const res = await axios.get("https://loot-bazar-api.onrender.com/api/product");
+      const res = await axios.get("https://loot-bazar.vercel.app/api/product");
       setProducts(res.data.Products);
     } catch (error) {
       console.error("Error fetching product data:", error);
