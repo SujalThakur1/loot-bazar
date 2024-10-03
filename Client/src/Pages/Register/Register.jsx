@@ -21,7 +21,7 @@ export default function Login() {
       } else {
         setError("");
         await axios.post(
-          "https://loot-bazar-api.onrender.com/user/register",
+          "https://loot-bazar.vercel.app/user/register",
           { ...user },
           { withCredentials: true }
         );
